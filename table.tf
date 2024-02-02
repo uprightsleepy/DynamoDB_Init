@@ -16,16 +16,6 @@ resource "aws_dynamodb_table" "encryption_table" {
         type = "S"
     }
 
-    attribute {
-        name = "Data"
-        type = "B"
-    }
-
-    attribute {
-        name = "Metadata"
-        type = "M"
-    }
-
     tags = {
         Name = "EncryptionData"
     }
